@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/TodoF"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/ic_done_all_24px"
+        android:iconTint="@color/lightOrange"
+        android:title="To-do" />
+
+    <item
+        android:id="@+id/DdayF"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_date_range_24px"
+        android:iconTint="@color/lightOrange"
+        android:title="D-day" />
+
+    <item
+        android:id="@+id/TimerF"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_timer_24px"
+        android:iconTint="@color/lightOrange"
+        android:title="Timer" />
+
+</menu>
