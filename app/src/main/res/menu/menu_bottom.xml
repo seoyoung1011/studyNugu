@@ -11,13 +11,13 @@
 
     <item
         android:id="@+id/DdayF"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         android:icon="@drawable/ic_dday"
         android:title="D-day" />
 
     <item
         android:id="@+id/TimerF"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         android:icon="@drawable/ic_timer"
         android:title="Timer" />
 
