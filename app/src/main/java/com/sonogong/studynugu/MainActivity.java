@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     TodoFragment Todo;
     DdayFragment Dday;
     TimerFragment Timer;
+    SettingFragment Setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Todo = new TodoFragment();
         Dday = new DdayFragment();
         Timer = new TimerFragment();
+        Setting = new SettingFragment();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container, Todo).commit();
         getSupportActionBar().setTitle("To do");
@@ -52,17 +54,16 @@ public class MainActivity extends AppCompatActivity {
 
                                 return true;
                             }
+                            case R.id.SettingF:{
+                                getSupportFragmentManager().beginTransaction().replace(R.id.container, Setting).commit();
+                                getSupportActionBar().setTitle("설정");
+
+                                return true;
+                            }
                         }
                         return false;
                     }
                 }
         );
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.actionbar_actions, menu);
-
-        return true;
     }
 }

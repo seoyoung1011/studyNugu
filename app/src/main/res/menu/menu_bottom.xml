@@ -21,4 +21,10 @@
         android:icon="@drawable/ic_timer"
         android:title="Timer" />
 
+    <item
+        android:id="@+id/SettingF"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_setting"
+        android:title="setting" />
+
 </menu>
