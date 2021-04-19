@@ -20,4 +20,5 @@ public class TodoFragment extends Fragment {
                              @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_todo, container, false);
     }
+
 }
